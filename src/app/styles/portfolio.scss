@@ -22,14 +22,19 @@ body {
     background: url('./assets/images/cover.jpg') no-repeat;
     background-size: cover;
     background-position: bottom;
-    min-height: 500px;
+    min-height: 200px;   
+    max-height: 400px;
     padding-top: 180px;
     padding-bottom: 100px;
 }
 
-.mt-90 {
-    margin-top: 90px;
+.mat-card-header .mat-card-title {
+    font-size: 15px;
 }
+
+// .mt-90 {
+//     margin-top: 90px;
+// }
 .fill {
     display: flex;
     justify-content: center;
@@ -62,11 +67,11 @@ body {
 
 }
 .font-white {
-    color: white;
+    color: #ffffff;
 }
 
 .font-red {
-    color: red;
+    color: #dd0031;
 }
 .navbar {
     background: $alt-bg;
@@ -79,7 +84,8 @@ body {
         transition: color 0.2s ease-in;
 
         &.active {
-            color: $accent;
+            color: black;
+            font-weight: 600;
         }
 
         &:hover:not(.active) {
@@ -88,11 +94,15 @@ body {
     }
 }
 
+.beige-color {
+    background-color: #d4c5ae !important;
+}
+
 .row {
     .skill-block {
         padding: 2.5rem 1.25rem;
         margin-bottom: 1rem;
-        min-height: 200px;
+        height: 150px;
     }
 }
 
@@ -123,12 +133,15 @@ body {
             list-style: none;
 
             a {
-                padding: 0.75rem 1rem;
+                padding: 0.75rem 2rem;
                 text-align: center;
-                transition: color 0.2s ease-in;
+                transition: color 0.3s ease-in;
+                color: #dd0031;
 
                 &:hover {
-                    color: $accent;
+                    color: #dd0031;
+                    font-weight: 600;
+                    
                 }
             }
         }
@@ -206,6 +219,6 @@ body {
 @media only screen and (min-width: 1200px) {
     .resize {
 
-        font-size: 40px;
+        font-size: 35px;
         }
 }
