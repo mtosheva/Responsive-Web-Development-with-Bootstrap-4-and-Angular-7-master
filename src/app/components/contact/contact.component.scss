@@ -9,3 +9,38 @@ p {
 textarea {
     min-height: 10rem;
 }
+
+
+.accent-color {
+    color: #9e110e;
+
+}
+
+.remove-padding {
+    padding: 0px;
+}
+
+mat-form-field {
+    color: white;
+  }
+
+  form-border-bottom {
+      border-bottom: 1px solid white!important;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: pink;
+  }
+
+  ::-moz-placeholder {
+    opacity: 1;
+  }
+

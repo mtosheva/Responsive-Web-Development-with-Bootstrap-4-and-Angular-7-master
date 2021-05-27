@@ -3,9 +3,8 @@
     <h4>Контакт информации</h4>
   </mat-card>
 </div>
-<mat-divider class="my-3"></mat-divider>
-<div class="row mb-5">
-  <div class="col-12 col-md-4">
+<mat-divider class="my-3 mt-50"></mat-divider>
+  <!-- <div class="col-12 col-md-4">
     <address>
       <p><strong>Локација</strong></p>
       <p>Улица ...</p>
@@ -14,19 +13,44 @@
       <p><strong>е-Маил</strong></p>
       <a  href="mailto:myemail@email.com">myemail@email.com</a>
     </address>
+  </div> -->
+  <div class="row">
+    <div class="col-xs-1 col-1 remove-padding" style="top: 50%;">
+      <mat-card style="padding-top: 50%;padding-bottom: 50%;margin-top:20%">
+        <div class="col-12" style="margin-top:20%">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="col-12" style="margin-top:20%">
+          <i class="fab fa-facebook"></i>
+
+        </div>
+        <div class="col-12" style="margin-top:20%">
+          <i class="fab fa-instagram"></i>
+
+        </div>
+      </mat-card>
+    </div>
+
+
+    <div class="col-xs-3 col-3 mb-50 remove-padding">
+      <mat-card style="background-color: #ae4040;padding:15px 20px 15px 20px">
+        <form style="background-color:#9e110e;padding:10px " ngNoForm action="https://formspree.io/address@email.tld"
+          method="POST">
+          <mat-form-field color="#ae4040" class="full-width mb-2">
+            <input matInput type="email" placeholder="Your Email" name="_replyto" required style="border-bottom:1px solid white" >
+          </mat-form-field>
+          <mat-form-field class="full-width mb-2">
+            <input matInput placeholder="Subject" name="subject" required style="border-bottom:1px solid white" >
+          </mat-form-field>
+          <mat-form-field class="full-width mb-2" color='#ae4040'>
+            <textarea  matInput  placeholder="Message" name="message" required style="border-bottom:1px solid white" ></textarea>
+          </mat-form-field>
+          <button style="background-color: white;" mat-stroked-button  type="submit">Send message</button>
+        </form>
+      </mat-card>
+    </div>
+
+    <div class="col-xs-7 col-7 remove-padding" >
+      <img src="../../../assets/images/bg.jpg" width="80%" style="margin-top:5%">
+    </div>
   </div>
-  <div class="col-12 col-md-8">
-    <form ngNoForm action="https://formspree.io/address@email.tld" method="POST">
-      <mat-form-field class="full-width mb-2">
-        <input matInput type="email" placeholder="Your Email" name="_replyto" required>
-      </mat-form-field>
-      <mat-form-field class="full-width mb-2">
-        <input matInput placeholder="Subject" name="subject" required>
-      </mat-form-field>
-      <mat-form-field class="full-width mb-2">
-        <textarea matInput placeholder="Message" name="message" required></textarea>
-      </mat-form-field>
-      <button mat-stroked-button type="submit">Send message</button>
-    </form>
-  </div>
-</div>
