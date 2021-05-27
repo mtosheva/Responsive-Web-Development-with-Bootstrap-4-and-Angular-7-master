@@ -14,8 +14,15 @@
     </div>
     <div [class]="backgroungImage">
       <div class="container mt-90">
-        <h1 class="font-bold font-white resize uppercase">Интернационален погребен</h1>
-        <div class="font-extrabold accent-color resize uppercase">транспорт</div>
+        <div *ngIf="showHomepageText">
+          <h1 class="font-bold font-white resize uppercase">Интернационален погребен</h1>
+          <div class="font-extrabold accent-color resize uppercase">транспорт</div>
+        </div>
+        <div *ngIf="showContactText">
+          <h1 class="font-bold font-white resize uppercase">Контактирајте не</h1>
+          <div class="font-extrabold accent-color resize uppercase">нас</div>
+        </div>
+  
 
       </div>
     </div>
