@@ -53,3 +53,44 @@ mat-form-field {
     opacity: 1;
   }
 
+//   .mat-form-field-label {
+//     font-size: 0.8em!important;
+//   }
+
+//   input {
+//     font-size: 0.8em;
+// }
+
+// input::placeholder { font-size: XXem; } 
+
+
+// ::ng-deep .mat-form-field {
+//   .mat-input-element {
+//       color: slategray;
+//   }
+//   .mat-form-field- {
+//       color: slategray;
+//   }
+//   .mat-form-field-underline {
+//       background-color: slategray;
+//   }
+//   .mat-form-field-ripple {
+//       background-color: slategray;
+//   }
+//   .mat-form-field-required-marker {
+//       color: slategray;
+//   }
+
+::ng-deep .mat-form-field-placeholder{
+
+  color: red!important;;
+  font-size: 10px;
+}
+.mat-input-element::placeholder{
+  color: red;
+}
+
+.placeholder {
+  font-size:0.9rem;
+  opacity: 0.8;
+}

@@ -4,19 +4,19 @@
       <nav class="navbar navbar-expand navbar-dark">
         <div class="navbar-nav">
           <a class="nav-item nav-link" [routerLink]="['/home']" routerLinkActive="active"><i
-              class="d-none d-sm-inline-block fas fa-home mx-1"></i> Дома </a>
+              class="d-none d-sm-inline-block mx-1"></i> Дома </a>
           <a class="nav-item nav-link" [routerLink]="['/portfolio']" routerLinkActive="active"><i
-              class="d-none d-sm-inline-block fas fa-images mx-1"></i> Сервиси</a>
+              class="d-none d-sm-inline-block  mx-1"></i> Сервиси</a>
           <a class="nav-item nav-link" [routerLink]="['/contact']" routerLinkActive="active"><i
-              class="d-none d-sm-inline-block fas fa-envelope mx-1"></i>Контакт</a>
+              class="d-none d-sm-inline-block  mx-1"></i>Контакт</a>
         </div>
       </nav>
     </div>
     <div [class]="backgroungImage">
       <div class="container mt-90">
         <div *ngIf="showHomepageText">
-          <h1 class="font-bold font-white resize uppercase">Интернационален погребен</h1>
-          <div class="font-extrabold accent-color resize uppercase">транспорт</div>
+          <h1 class="font-bold font-white resize uppercase">Интернационален</h1>
+          <div class="font-extrabold resize uppercase"><span class="font-white">погребен</span>&nbsp;<span class="accent-color">транспорт</span></div>
         </div>
         <div *ngIf="showContactText">
           <h1 class="font-bold font-white resize uppercase">Контактирајте не</h1>

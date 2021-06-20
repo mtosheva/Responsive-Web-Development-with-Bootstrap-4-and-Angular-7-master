@@ -29,7 +29,7 @@ body {
 }
 
 .backgroungImage-contact {
-    background: url('./assets/images/bg2.jpg') no-repeat;
+    background: url('./assets/images/contact-cover.jpg') no-repeat;
     background-size: cover;
     background-position: bottom;
     min-height: 200px;   
@@ -39,13 +39,13 @@ body {
 }
 
 .backgroungImage-portfolio {
-    background: url('./assets/images/bg.jpg') no-repeat;
+    background: url('./assets/images/lucas-cover.jpg') no-repeat;
     background-size: cover;
-    background-position: bottom;
-    min-height: 200px;   
-    max-height: 400px;
-    padding-top: 180px;
-    padding-bottom: 100px;
+    background-position: left;
+    min-height: 208px;
+    max-height: 386px;
+    padding-top: 400px;
+    padding-bottom: 0px;
 }
 
 .mat-card-header .mat-card-title {
@@ -76,12 +76,12 @@ body {
 
 .font-bold {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 900;
 }
 
 .font-extrabold {
     font-family: 'Montserrat';
-    font-weight: 800;
+    font-weight: 900;
 
 }
 .font-white {
@@ -93,7 +93,7 @@ body {
 }
 .navbar {
     background: $alt-bg;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #493125;
     top: 1.5rem;
 
     .navbar-nav .nav-link {

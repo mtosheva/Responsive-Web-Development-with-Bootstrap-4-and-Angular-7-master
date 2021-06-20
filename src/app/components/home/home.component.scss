@@ -12,4 +12,20 @@ img {
     width: 20%;
   }
 
+  
+  .center-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-width {
+    width: 100%;
+  }
+  @media only screen and (max-width: 776px) {
+   .img-width {
+     width:20%;
+   }
+  }
+
+
 

@@ -34,18 +34,29 @@
 
     <div class="col-xs-3 col-3 mb-50 remove-padding">
       <mat-card style="background-color: #ae4040;padding:15px 20px 15px 20px">
-        <form style="background-color:#9e110e;padding:10px " ngNoForm action="https://formspree.io/address@email.tld"
+        <form style="background-color:#9e110e;padding:10px " ngNoForm (submit)="sendEmail($event)"
           method="POST">
           <mat-form-field color="#ae4040" class="full-width mb-2">
-            <input matInput type="email" placeholder="Your Email" name="_replyto" required style="border-bottom:1px solid white" >
+            <input matInput  name="_replyto" required style="border-bottom:1px solid white" >
+              <mat-placeholder class="placeholder">Вашето име</mat-placeholder>
           </mat-form-field>
-          <mat-form-field class="full-width mb-2">
-            <input matInput placeholder="Subject" name="subject" required style="border-bottom:1px solid white" >
+
+          <mat-form-field color="#ae4040" class="full-width mb-2">
+            <input matInput name="_phonenmb" required style="border-bottom:1px solid white" >
+            <mat-placeholder class="placeholder">Телефонски број</mat-placeholder>
+
           </mat-form-field>
+
+          <mat-form-field color="#ae4040" class="full-width mb-2">
+            <input matInput  name="_email" required style="border-bottom:1px solid white" >
+            <mat-placeholder class="placeholder">Вашиот е-Маил</mat-placeholder>
+          </mat-form-field>
+
           <mat-form-field class="full-width mb-2" color='#ae4040'>
-            <textarea  matInput  placeholder="Message" name="message" required style="border-bottom:1px solid white" ></textarea>
+            <textarea  matInput   name="message" required style="border-bottom:1px solid white" ></textarea>
+            <mat-placeholder class="placeholder">Порака</mat-placeholder>
           </mat-form-field>
-          <button style="background-color: white;" mat-stroked-button  type="submit">Send message</button>
+          <button style="background-color: white;left:20%" mat-stroked-button  type="submit">Испрати порака</button>
         </form>
       </mat-card>
     </div>
